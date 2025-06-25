@@ -33,8 +33,8 @@
             </p>
 
             <div class="buttons">
-                <a href="#" class="button yes">Sim, eu aceito conversar!</a>
-                <a href="#" class="button no">Não agora, mas vamos conversar depois.</a>
+                <a href="#" class="button yes" onclick="showImage('sim')">Sim, eu aceito conversar!</a>
+                <a href="#" class="button no" onclick="showImage('nao')">Não agora, mas vamos conversar depois.</a>
             </div>
         </div>
 
@@ -46,7 +46,28 @@
             <div class="heart"></div>
             <div class="heart"></div>
         </div>
+
+        <!-- Foto extra e mensagem (invisível por padrão) -->
+        <div id="response-image" class="response-image">
+            <img src="foto-nova.jpg" alt="Nossa Foto" class="response-photo"> <!-- Substitua 'foto-nova.jpg' pela foto desejada -->
+            <p id="response-message" class="response-message"></p>
+        </div>
     </div>
+
+    <script>
+        function showImage(response) {
+            const responseImage = document.getElementById("response-image");
+            const responseMessage = document.getElementById("response-message");
+
+            if (response === 'sim') {
+                responseImage.style.display = "block";
+                responseMessage.textContent = "Eu te prometo, você não vai se arrepender! Eu só quero que você saiba o quanto te valorizo e como é importante para mim.";
+            } else {
+                responseImage.style.display = "block";
+                responseMessage.textContent = "Sem problemas, MB. Sei que o tempo vai nos mostrar o que é melhor, e eu estarei aqui, esperando o momento certo.";
+            }
+        }
+    </script>
 
 </body>
 </html>
