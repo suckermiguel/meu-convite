@@ -156,5 +156,13 @@ body {
     }
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Foto e mensagem de resposta (invisíveis inicialmente) */
+.response-image {
+    display: none;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.response-photo {
+    width: 300px;
+    height: auto;
