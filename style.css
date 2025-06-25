@@ -1,0 +1,96 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('corações.png') no-repeat center center fixed; /* Substitua 'corações.png' pelo seu fundo de corações */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+.header h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Fotos */
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.photos img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Corações e texto */
+.heart-background {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.heart-background p {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.yes {
+    background-color: #27ae60; /* Verde */
+}
+
+.no {
+    background-color: #e74c3c; /* Vermelho */
+}
+
+.button:hover {
+    opacity: 0.8;
+}
